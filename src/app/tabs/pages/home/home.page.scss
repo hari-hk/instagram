@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Cookie&display=swap");
+
+ion-header {
+    ion-title {
+        font-family: "Cookie", cursive;
+        font-size: 1.8rem;
+        letter-spacing: 2px;
+    }
+}
+
+ion-card > * {
+    font-size: 12px;
+}
+.card-content-md {
+    padding-top: 0;
+}
