@@ -15,4 +15,4 @@ Instagram Clone is currently extended with the following plugins. Instructions o
 
 | Plugin | README |
 | ------ | ------ |
-| GitHub | [plugins/github/README.md][PlGh] |
+<!-- | GitHub | [plugins/github/README.md] | -->
