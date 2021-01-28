@@ -1,0 +1,14 @@
+.toolbar {
+    ion-searchbar {
+        padding-top: 16px;
+    }
+}
+.item {
+    height: 150px;
+    object-fit: cover;
+    object-position: top;
+}
+ion-grid {
+    --ion-grid-padding: 1px;
+    --ion-grid-column-padding: 1px;
+}

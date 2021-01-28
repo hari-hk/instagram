@@ -1,9 +1,20 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>search</ion-title>
+  <ion-toolbar class="toolbar">
+    <ion-searchbar mode="ios" debounce="500"></ion-searchbar>
+    <ion-buttons slot="secondary">
+      <ion-button>
+        <ion-icon slot="icon-only" name="scan-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
+  <ion-grid>
+    <ion-row>
+      <ion-col *ngFor="let item of list" size="4">
+        <img [src]="item.download_url" alt="" class="item">
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
