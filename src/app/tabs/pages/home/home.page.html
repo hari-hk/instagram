@@ -24,9 +24,7 @@
   <ion-card *ngFor="let item of list">
     <ion-toolbar>
       <ion-buttons slot="start">
-        <ion-button>
-          <ion-icon slot="icon-only" name="person-circle"></ion-icon>
-        </ion-button>
+        <img class="profile" [src]="item.download_url" alt="" srcset="">
       </ion-buttons>
       <ion-title>{{item.author}} </ion-title>
       <ion-buttons slot="end">
