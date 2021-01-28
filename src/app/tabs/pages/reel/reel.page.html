@@ -1,9 +1,55 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>reel</ion-title>
+<ion-content fullscreen="true">
+  <ion-toolbar class="header">
+    <ion-title>Reels
+    </ion-title>
+    <ion-buttons slot="primary">
+      <ion-button>
+        <ion-icon slot="icon-only" name="camera-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
-</ion-header>
+  <ion-slides pager="false" [options]="option" direction="vertical">
+    <ion-slide *ngFor="let item of list">
+      <img class="reel" [src]="item.download_url" alt="">
+      <div class="foot-menu">
+        <div class="profile">
+          <img [src]="item.download_url" alt="">
+          <span>{{item.author}}</span>
+          <div class="dot"></div>
+          <span>Follow</span>
+        </div>
+        <div class="description">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio pariatur adipisci doloremque qui voluptas
+          similique. Tenetur laborum recusandae
+        </div>
+        <ion-toolbar>
+          <ion-buttons class="main" slot="start">
+            <ion-button>
+              <ion-icon slot="icon-only" name="heart"></ion-icon>
+            </ion-button>
+            <ion-button>
+              <ion-icon slot="icon-only" name="chatbubble"></ion-icon>
+            </ion-button>
+            <ion-button>
+              <ion-icon slot="icon-only" name="paper-plane"></ion-icon>
+            </ion-button>
+            <ion-button>
+              <ion-icon slot="icon-only" name="ellipsis-vertical"></ion-icon>
+            </ion-button>
+          </ion-buttons>
+          <ion-buttons class="second" slot="end">
+            <ion-button>
+              <ion-icon slot="start" name="heart"> </ion-icon>
+              2.2K
+            </ion-button>
+            <ion-button>
+              <ion-icon slot="start" name="chatbubble"></ion-icon>
+              100
+            </ion-button>
+          </ion-buttons>
+        </ion-toolbar>
+      </div>
 
-<ion-content>
-
+    </ion-slide>
+  </ion-slides>
 </ion-content>
